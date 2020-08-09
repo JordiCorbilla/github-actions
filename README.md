@@ -61,3 +61,17 @@ jobs:
         path: /home/runner/work/myproject/myproject/myASPNETCoreApp/bin/Debug/netcoreapp3.1/win-x64/publish/
 ```
 
+Once completed, you will see the actions taking place on every commit. Below is a sample of execution for different changes in my project:
+
+![](https://github.com/JordiCorbilla/github-actions/raw/master/actionresults.png)
+
+We can click on the commit and explore the output of the build and dril into the build log for more details:
+
+![](https://github.com/JordiCorbilla/github-actions/raw/master/projectartifactis.png)
+
+
+![](https://github.com/JordiCorbilla/github-actions/raw/master/publishprocedure.png)
+
+One thing to take into consideration is that this is not for free and there is a cost implied if you go over the limit. There is a very healthy limit and you can specify the amount of money you want to spend. The default is $0, so there is no risk of getting billed accidentally. More info [here](https://docs.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions).
+
+![](https://github.com/JordiCorbilla/github-actions/raw/master/aboutbilling.png)
