@@ -1,6 +1,6 @@
 # Github Actions
 
-## GitHub Actions to publish Artifacts.
+## GitHub Actions to publish .net core artifacts.
 
 In this article you'll find how easy and simple it is to generate your .net core artifacts (binaries) using Github Actions. 
 
