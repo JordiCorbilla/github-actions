@@ -61,7 +61,7 @@ jobs:
         path: /home/runner/work/myproject/myproject/myASPNETCoreApp/bin/Debug/netcoreapp3.1/win-x64/publish/
 ```
 
-Once completed, you will see the actions taking place on every commit. Below is a sample of execution for different changes in my project:
+Once completed, you will see the actions taking place on every commit. Below is a sample of execution for different changes in my project. Note that in the image below, the artifacts (binaries) of my project are attached to the output of the action's workflow.
 
 ![](https://github.com/JordiCorbilla/github-actions/raw/master/actionresults.png)
 
@@ -69,9 +69,10 @@ We can click on the commit and explore the output of the build and dril into the
 
 ![](https://github.com/JordiCorbilla/github-actions/raw/master/projectartifactis.png)
 
+If we drill into the build log, we will be able to find the location of the machine where the artifacts are generated so we can zip them up. I've highlighted it in red and it should match the path mentioned in my YAML file.
 
 ![](https://github.com/JordiCorbilla/github-actions/raw/master/publishprocedure.png)
 
-One thing to take into consideration is that this is not for free and there is a cost implied if you go over the limit. There is a very healthy limit and you can specify the amount of money you want to spend. The default is $0, so there is no risk of getting billed accidentally. More info [here](https://docs.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions).
+One thing to take into consideration is that this is not for free and there is a cost implied if you go over the limit. This build happens on a linux machine (as defined in the YAML file) and there is a cost for using this machine. There is a very healthy limit and you can specify the amount of money you want to spend. The default is $0, so there is no risk of getting billed accidentally. More info [here](https://docs.github.com/en/github/setting-up-and-managing-billing-and-payments-on-github/about-billing-for-github-actions).
 
 ![](https://github.com/JordiCorbilla/github-actions/raw/master/aboutbilling.png)
