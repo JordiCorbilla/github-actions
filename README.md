@@ -2,11 +2,11 @@
 
 ## GitHub Actions to publish .net core artifacts.
 
-In this article you'll find how easy and simple it is to generate your .net core artifacts (binaries) using Github Actions. 
+In this article, you'll find how easy and simple it is to generate your .net core artifacts (binaries) using Github Actions. 
 
 ## Adding your action
 
-Github offers a set of predefined actions that you can use to leverage the needs of your deployment machine. Maybe you need to generate artifacts for a Windows machine or Mac, or Linux and you want to generate all of them without having to build thing separately. The easiest way to use continuous integration through Github Actions is via a workflow configuration file. Go to Actions and click new workflow:
+Github offers a set of predefined actions that you can use to leverage the needs of your deployment machine. Maybe you need to generate artifacts for a Windows machine or Mac or Linux and you want to generate all of them without having to build thing separately. The easiest way to use continuous integration through Github Actions is via a workflow configuration file. Go to Actions and click new workflow:
 
 ![](https://github.com/JordiCorbilla/github-actions/raw/master/githubactions.png)
 
@@ -65,7 +65,7 @@ Once completed, you will see the actions taking place on every commit. Below is 
 
 ![](https://github.com/JordiCorbilla/github-actions/raw/master/actionresults.png)
 
-We can click on the commit and explore the output of the build and dril into the build log for more details:
+We can click on the commit and explore the output of the build and drill into the build log for more details:
 
 ![](https://github.com/JordiCorbilla/github-actions/raw/master/projectartifactis.png)
 
